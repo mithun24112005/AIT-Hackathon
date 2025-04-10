@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Report Page - WAPS</title>
+  <link rel="stylesheet" href="report.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">logo</div>
+    <h1>Report page</h1>
+  </header>
+
+  <main class="report-container">
+    <div class="dropzones">
+      <div class="dropzone" id="photoDrop">
+        <div class="plus">+</div>
+        <p><strong>Drop photos here</strong><br><span>Max size 5mb</span></p>
+        <input type="file" accept="image/*" hidden />
+      </div>
+
+      <div class="dropzone" id="fileDrop">
+        <div class="plus">+</div>
+        <p><strong>Drop files here</strong><br><span>Max size 5mb</span></p>
+        <input type="file" hidden />
+      </div>
+
+      <div class="dropzone" id="videoDrop">
+        <div class="plus">+</div>
+        <p><strong>Drop videos here</strong><br><span>Max size 25mb</span></p>
+        <input type="file" accept="video/*" hidden />
+      </div>
+    </div>
+
+    <div class="autocomplete-container">
+        <input type="text" id="pincodeInput" placeholder="Enter pin-code" autocomplete="off" />
+        <ul id="pincodeSuggestions" class="suggestions-list">
+        </ul>
+      </div>
+      
+
+    <textarea class="case-description" placeholder="write about the case.."></textarea>
+
+    <div class="bottom-bar">
+      <span class="terms">Terms & conditions.</span>
+      <button class="submit-btn">Submit</button>
+    </div>
+  </main>
+
+  <script src="report.js"></script>
+</body>
+</html>
