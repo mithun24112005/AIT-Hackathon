@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Report Page - WAPS</title>
   <link rel="stylesheet" href="report.css" />
 </head>
+
 <body>
   <header>
-    <div class="logo">logo</div>
+    <a href="user-hero.html" class=""><img src="logo-2.jpg" alt="this is the logo of the project" class="logo"></a>
+
     <h1>Report page</h1>
   </header>
 
@@ -34,20 +37,25 @@
     </div>
 
     <div class="autocomplete-container">
-        <input type="text" id="pincodeInput" placeholder="Enter pin-code" autocomplete="off" />
-        <ul id="pincodeSuggestions" class="suggestions-list">
-        </ul>
-      </div>
-      
+      <input type="text" id="pincodeInput" placeholder="Enter pin-code" autocomplete="off" />
+      <ul id="pincodeSuggestions" class="suggestions-list">
+      </ul>
+    </div>
+
 
     <textarea class="case-description" placeholder="write about the case.."></textarea>
 
     <div class="bottom-bar">
-      <span class="terms">Terms & conditions.</span>
-      <button class="submit-btn">Submit</button>
+      <span class="terms">
+        <label class="container">
+          <input type="checkbox" required />
+          <div class="checkmark"></div>
+        </label><span class="termsandcond"><a href="terms.html">Terms & conditions.</a></span></span>
+      <a href="user-hero.html"><button class="submit-btn" id="openModel">Submit</button></a>
     </div>
   </main>
 
   <script src="report.js"></script>
 </body>
+
 </html>

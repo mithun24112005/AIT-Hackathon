@@ -1,0 +1,227 @@
+html{
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #e6e8e5;
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+
+}
+
+header {
+  background:none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 40px;
+}
+.logo {
+  top:0px;
+  height:100px;
+  width:100px;
+  left:30px;
+  border-radius: 100px;
+  position:fixed;
+  font-weight: bold;
+  display:flex;
+  justify-content: space-between;
+}
+
+.login:hover{
+  cursor:pointer;
+  text-decoration:none;
+}
+.logo, .profile-icon {
+  font-weight: bold;
+}
+
+h1 {
+  margin: 0;
+  font-weight: 500;
+  letter-spacing:10px;
+}
+
+.container {
+  padding: 30px;
+}
+
+.card {
+  background: transparent;
+  border: 2px solid rgba(225, 225, 225, .2);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgba(255, 252, 252, 0.468);
+  padding: 20px;
+  color:#fff;
+  border-radius: 18px;
+  margin-bottom: 25px;
+  display: flex;
+  gap: 20px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 450px;
+}
+
+.pincode {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.file-boxes {
+  display: flex;
+  gap: 15px;
+}
+
+.file-box {
+  width: 500px;
+  height: 180px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-top:30px;
+  justify-content: space-between;
+}
+
+.description {
+  background-color: #c5c5c3;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left:25px;
+  height: 100px;
+  width:750px;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.progress-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-left:400px;
+  margin-bottom: 4px;
+  padding: 0 4px;
+  max-width: 300px;
+}
+
+.progress-bar {
+  display: flex;
+  margin-left:400px;
+  height: 10px;
+  width: 300px;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #e0e0e0;
+  margin-bottom: 10px;
+}
+
+.bar {
+  height: 100%;
+}
+
+.submitted {
+  background-color: #05c61c;
+  width: 25%;
+}
+
+.viewed {
+  background-color: #05c61c;
+  width: 30%;
+}
+
+.solved {
+  background-color: #05c61c;
+  width: 0%;
+}
+
+.full.solved {
+  width: 35%;
+}
+
+.full.viewed {
+  width: 30%;
+}
+
+.full.submitted {
+  width: 35%;
+}
+
+/* From Uiverse.io by vinodjangid07 */ 
+.reward-btn {
+  width: 120px;
+  height: 40px;
+  background-color: #101218;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-right:100px;
+}
+.IconContainer {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.IconContainer svg {
+  width: 40%;
+  z-index: 3;
+}
+.box-top {
+  transition: all 0.3s;
+}
+.text {
+  width: 70px;
+  height: 100%;
+  font-size: 13px;
+  color: #6a8ef6;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-weight: 600;
+}
+/* reward-css */
+.reward-btn{
+  margin-left:780px;
+}
+.reward-btn:hover .IconContainer .box-top {
+  transform: translateY(-5px);
+}
+.reward-btn:hover {
+  background-color: #252f36;
+}
+.reward-btn:hover .coin {
+  transform: translateY(-5px);
+  transition-delay: 0.2s;
+}
+.coin {
+  width: 25%;
+  height: 25%;
+  background-color: #e4d61a;
+  position: absolute;
+  border-radius: 50%;
+  transition: all 0.3s;
+  z-index: 1;
+  border: 2px solid #ffe956;
+  margin-top: 4px;
+}
+

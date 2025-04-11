@@ -15,6 +15,7 @@
   
   main{
     min-height:200vh;
+    overflow:auto;
   }
 
   body {
@@ -30,12 +31,14 @@
   position:fixed;
   height:100%;
   z-index:-1;
+  pointer-events:none;
   top:0;
   left:0;
 }
 
 .back{
-  position:relative;
+  position:static;
+  overflow:auto;
   z-index: 1;
   height:100%;
   width:100%;
